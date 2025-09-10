@@ -3,197 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Booking - Explore the World</title>
+    <title>macOS Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="compass-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="14" stroke="white" stroke-width="2"/>
-                        <path d="M12 12L20 16L12 20V12Z" fill="white"/>
-                        <circle cx="16" cy="16" r="2" fill="white"/>
-                    </svg>
-                </div>
+    <div class="desktop">
+        <!-- Top Menu Bar -->
+        <header class="menu-bar">
+            <div class="menu-left">
+                <div class="apple-logo"></div>
+                <div class="app-name">Finder</div>
+                <div class="menu-item">File</div>
+                <div class="menu-item">Edit</div>
+                <div class="menu-item">View</div>
+                <div class="menu-item">Go</div>
+                <div class="menu-item">Window</div>
+                <div class="menu-item">Help</div>
             </div>
-            <div class="nav-menu">
-                <a href="#" class="nav-link active">HOME</a>
-                <a href="#" class="nav-link">DESTINATIONS</a>
-                <a href="#" class="nav-link">DEALS</a>
-                <a href="#" class="nav-link">BLOG</a>
-                <a href="#" class="nav-link">CONTACT</a>
+            <div class="menu-right">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="time">9:41 AM</div>
             </div>
-            <div class="nav-auth">
-                <button class="login-btn">LOGIN</button>
-                <button class="signup-btn">SIGNUP</button>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="search-container">
-                <form class="search-form">
-                    <div class="search-field">
-                        <input type="text" placeholder="Destination" class="search-input destination-input">
-                        <button type="button" class="search-icon">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="2"/>
-                                <path d="m19 19-4.35-4.35" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="search-field">
-                        <input type="text" placeholder="Dates" class="search-input dates-input">
-                    </div>
-                    <div class="search-field">
-                        <input type="text" placeholder="Travelers" class="search-input travelers-input">
-                    </div>
-                    <button type="submit" class="search-btn">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2"/>
-                            <path d="m15 15-4.35-4.35" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                        SEARCH
-                    </button>
-                </form>
+        <!-- Main Content Window -->
+        <main class="window" id="mainWindow">
+            <div class="title-bar">
+                <div class="traffic-lights">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                <div class="title">Welcome to my Portfolio</div>
             </div>
-        </div>
-        
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-        </div>
-    </section>
+            <div class="window-content">
+                <h1>Hello, I'm Jules</h1>
+                <p>I'm a passionate software engineer with a love for creating beautiful and functional web experiences. This landing page is a demonstration of my frontend skills, designed to look and feel like macOS.</p>
+                <p>Feel free to drag this window around and explore the different elements of the page. You can also check out my projects on the dock below.</p>
+            </div>
+        </main>
 
-    <!-- Destinations Section -->
-    <section class="destinations">
-        <div class="destinations-container">
-            <div class="destination-card">
-                <div class="card-image paris-bg"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Paris</h3>
-                    <p class="card-description">Consectetur a enim at est.</p>
-                </div>
+        <!-- Dock -->
+        <footer class="dock">
+            <div class="dock-item">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="VSCode">
+                <span class="tooltip">VSCode</span>
             </div>
-            
-            <div class="destination-card">
-                <div class="card-image kyoto-bg"></div>
-                <div class="card-content">
-                    <h3 class="card-title">Kyoto</h3>
-                    <p class="card-description">Maecenas consequat sodales felis!</p>
-                </div>
+            <div class="dock-item">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_git_icon_130581.png" alt="Git">
+                <span class="tooltip">Git</span>
             </div>
-            
-            <div class="destination-card featured">
-                <div class="card-image kyoto2-bg"></div>
-                <div class="card-content">
-                    <div class="card-badge popular">POPULAR</div>
-                    <h3 class="card-title">Kyoto</h3>
-                    <p class="card-description">Lorem Genim Sodales felis!</p>
-                </div>
+            <div class="dock-item">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="HTML">
+                <span class="tooltip">HTML</span>
             </div>
-            
-            <div class="destination-card featured">
-                <div class="card-image mahch-bg"></div>
-                <div class="card-content">
-                    <div class="card-badge featured-badge">FEATURED</div>
-                    <h3 class="card-title">Mahch Piccro</h3>
-                    <p class="card-description">Lorem Genim dolor nodin.</p>
-                </div>
+            <div class="dock-item">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png" alt="CSS">
+                <span class="tooltip">CSS</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
-                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
-                            <path d="m17.5 6.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Lins</h4>
-                    <ul>
-                        <li><a href="#">Paris</a></li>
-                    </ul>
-                </div>
+            <div class="dock-item">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png" alt="JavaScript">
+                <span class="tooltip">JavaScript</span>
             </div>
-            
-            <div class="footer-section">
-                <div class="footer-links">
-                    <h4>Quick Lins</h4>
-                    <ul>
-                        <li><a href="#">Quick Lins</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <div class="footer-links">
-                    <h4>Quick Lins</h4>
-                    <ul>
-                        <li><a href="#">Legal Lins</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-section newsletter-section">
-                <h4>Newsletter</h4>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Consectetur Pariatur..." class="newsletter-input">
-                    <button type="submit" class="newsletter-btn">SIGN UP</button>
-                </div>
-                <div class="newsletter-form">
-                    <input type="text" placeholder="Conirup" class="newsletter-input">
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <div class="footer-bottom-section">
-                    <h4>Fomuter</h4>
-                </div>
-                <div class="footer-bottom-section">
-                    <h4>Legal</h4>
-                </div>
-                <div class="footer-bottom-section">
-                    <h4>Newsletter</h4>
-                </div>
-            </div>
-            <div class="footer-bottom-links">
-                <p>Lorem Genim Dolor Lind</p>
-                <p>Lorem Genim</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
